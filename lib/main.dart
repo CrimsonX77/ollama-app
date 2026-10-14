@@ -43,16 +43,16 @@ import 'package:universal_html/html.dart' as html;
 // client configuration
 
 // use host or not, if false dialog is shown
-const bool useHost = false;
+const bool useHost = true;
 // host of ollama, must be accessible from the client, without trailing slash
 // ! will always be accepted as valid, even if [useHost] is false
-const String fixedHost = "http://example.com:11434";
+const String fixedHost = "http://localhost:11434";
 // use model or not, if false selector is shown
 const bool useModel = false;
 // model name as string, must be valid ollama model!
 const String fixedModel = "gemma";
 // recommended models, shown with a star in model selector
-const List<String> recommendedModels = ["gemma", "llama3"];
+const List<String> recommendedModels = ["nemotron", "nemotron-mini"];
 // allow opening of settings
 const bool allowSettings = true;
 // allow multiple chats
